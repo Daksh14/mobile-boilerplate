@@ -41,17 +41,9 @@ export default function Home(): JSX.Element {
   const [queryReference, loadQuery] = useQueryLoader(WaterIntakeQuery);
   useEffect(() => loadQuery({}), [loadQuery]);
 
-  const setValue = () => {
-    const mutation = commitMutation(environment, {
-      mutation: WaterIntakeMutation,
-    });
-
-    console.log(mutation);
-  };
-
   return queryReference ? (
     <Suspense fallback={<ActivityIndicator />}>
-      <HomeContent queryReference={queryReference} setValue={setValue} />
+      <HomeContent queryReference={queryReference} />
     </Suspense>
   ) : (
     <ActivityIndicator />
