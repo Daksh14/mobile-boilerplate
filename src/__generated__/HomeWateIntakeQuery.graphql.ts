@@ -3,20 +3,20 @@
 // @ts-nocheck
 
 import { ConcreteRequest } from "relay-runtime";
-export type HomeQueryVariables = {};
-export type HomeQueryResponse = {
-    readonly dummy: boolean;
+export type HomeWateIntakeQueryVariables = {};
+export type HomeWateIntakeQueryResponse = {
+    readonly waterIntake: number;
 };
-export type HomeQuery = {
-    readonly response: HomeQueryResponse;
-    readonly variables: HomeQueryVariables;
+export type HomeWateIntakeQuery = {
+    readonly response: HomeWateIntakeQueryResponse;
+    readonly variables: HomeWateIntakeQueryVariables;
 };
 
 
 
 /*
-query HomeQuery {
-  dummy
+query HomeWateIntakeQuery {
+  waterIntake
 }
 */
 
@@ -26,7 +26,7 @@ var v0 = [
     "alias": null,
     "args": null,
     "kind": "ScalarField",
-    "name": "dummy",
+    "name": "waterIntake",
     "storageKey": null
   }
 ];
@@ -35,7 +35,7 @@ return {
     "argumentDefinitions": [],
     "kind": "Fragment",
     "metadata": null,
-    "name": "HomeQuery",
+    "name": "HomeWateIntakeQuery",
     "selections": (v0/*: any*/),
     "type": "Query",
     "abstractKey": null
@@ -44,18 +44,18 @@ return {
   "operation": {
     "argumentDefinitions": [],
     "kind": "Operation",
-    "name": "HomeQuery",
+    "name": "HomeWateIntakeQuery",
     "selections": (v0/*: any*/)
   },
   "params": {
-    "cacheID": "0ce91341d7e79f358dcd26ff5617e31b",
+    "cacheID": "6cde2186a99ae0b851d747595628a067",
     "id": null,
     "metadata": {},
-    "name": "HomeQuery",
+    "name": "HomeWateIntakeQuery",
     "operationKind": "query",
-    "text": "query HomeQuery {\n  dummy\n}\n"
+    "text": "query HomeWateIntakeQuery {\n  waterIntake\n}\n"
   }
 };
 })();
-(node as any).hash = 'e37e976f507ba2eef3e97991dcca8fb2';
+(node as any).hash = '774de74faa168aa59d6ac02afa62abeb';
 export default node;

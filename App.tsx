@@ -22,7 +22,7 @@ export default function App(): JSX.Element {
 
 const environment = buildEnvironment();
 
-const backEndURLBase = "http://172.30.1.48:3030"; // Change this to address of server if using a real device
+const backEndURLBase = "http://192.168.29.194:3030"; // Change this to address of server if using a real device
 
 function buildEnvironment(): Environment {
   const fetchQuery: FetchFunction = (operation, variables) => {

@@ -1,8 +1,8 @@
 type Mutation {
-  dummy: Boolean!
+  addWaterIntake(waterDrank: Int!): Boolean!
 }
 
 type Query {
-  dummy: Boolean!
+  waterIntake: Int!
 }
 
